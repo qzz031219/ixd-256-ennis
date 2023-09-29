@@ -1,1 +1,3 @@
-# ixd-256-ennis
+# assignment 1
+
+Digital input project
