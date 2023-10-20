@@ -59,8 +59,8 @@ def loop():
     else:
 
 
-        initial_delay = 450 
-        decrease_factor = 15 
+        initial_delay = 300
+        decrease_factor = 10 
         current_delay = initial_delay
         for i in range(30): 
             r, g, b = current_colors[i]
