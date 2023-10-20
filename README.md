@@ -1,4 +1,4 @@
 # ixd-256-ennis
 
 
-Assignment: [Assignment2Link](assignment%202/)
+Assignment 2 Link: [Assignment2Link](assignment%202/)
