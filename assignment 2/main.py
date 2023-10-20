@@ -13,7 +13,7 @@ def draw():
   global data
   data = document.getElementById("data").innerText
   
-  #circle_size = int(data)
+  circle_size = int(data)
   p5.noStroke()
   p5.fill(150)
   #p5.ellipse(150, 150, circle_size, circle_size)
