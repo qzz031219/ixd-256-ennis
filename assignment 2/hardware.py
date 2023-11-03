@@ -31,12 +31,14 @@ def loop():
     global adc, adc_val, adc_timer, adc_calibration_val, button_pressed
     M5.update()
 
-    if BtnA.wasPressed() and not button_pressed:
+    if BtnA.wasPressed():
         button_pressed = True
-        print('TOGGLE_SHAPE') 
+        print('TOGGLE_SHAPE')
+        time.sleep_ms(50)
 
     if not BtnA.isPressed() and button_pressed:
         button_pressed = False
+        time.sleep_ms(50)
     
     if (time.ticks_ms() > adc_timer + 100):
         adc_val = adc.read()
