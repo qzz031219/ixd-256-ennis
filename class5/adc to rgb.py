@@ -12,8 +12,8 @@ def setup():
   global adc, adc_val, rgb
   M5.begin()
   # configure ADC input on pin G1 with 11dB attenuation:
-  adc = ADC(Pin(1), atten=ADC.ATTN_11DB)
-  rgb = RGB(io=38, n=30, type="SK6812")
+  adc = ADC(Pin(6), atten=ADC.ATTN_11DB)
+  rgb = RGB(io=39, n=30, type="SK6812")
 
   # rgb = RGB()
 
