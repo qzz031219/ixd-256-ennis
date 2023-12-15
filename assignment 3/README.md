@@ -1,4 +1,5 @@
-# ixd-256-ennis
+# ixd-256-ennis Assignment 3
 
 
-Assignment 2 Link: [Assignment2Link](assignment%202/)
+Video link:
+https://youtu.be/BPEaLAs0lDM
