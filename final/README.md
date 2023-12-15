@@ -4,15 +4,11 @@
 
 ![image](https://github.com/qzz031219/ixd-256-ennis/assets/146476099/710eaf1f-fb2d-42b0-9ee6-d9ad6fd5cafd)
 
-
 This is my initial idea, which is to create an interactive art installation piece. So I want to use the pressure sensor to toggle the videos and use the distance sensor/ultrasonic sensor to control the volume based on the distance between the screen and the audience.
-
 
 The big concept behind this piece is life. The noise and hustle and bustle of life are everywhere, working and studying, getting up early and going to bed late, all of which take a toll on our minds. Including the seriousness of today's rat race, whether it is society or people around us will bring us a lot of pressure. How do we escape this predicament?
 
-
 Therefore, I want the viewers to put down their phones, relax and enter a meditative state through this work. That's why I wanted to create an immersive space for this project.
-
 
 ## Implementation
 
@@ -197,6 +193,7 @@ After testing, the best way to detect the distance between screen and the audien
 
 
 ## Conclusion
+
 Before I got into ArtCenter, I did play around with some sensors, one of which was an ultrasonic sensor. At that time, when I was using the arduino uno, I felt that the video playback wasn't that smooth and clear, and I didn't know what to do with it. I thought there must be a new hardware or way to fix it. But now, I figured it out.
 
 
