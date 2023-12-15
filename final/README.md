@@ -1,6 +1,6 @@
 # ixd-256-ennis
 
-Project Name: life's silent escape.
+**Project Name: life's silent escape.**
 
 **Introduction**
 
@@ -13,4 +13,4 @@ The big concept behind this piece is life. The noise and hustle and bustle of li
 So I want to go through this work to let the audience's mood relax and enter into a meditative state. That's why I want to create an immersive space for this project.
 
 
-Implementation
+**Implementation**
