@@ -1,8 +1,8 @@
 # ixd-256-ennis
 
-**Project Name: life's silent escape.**
+#**Project Name: life's silent escape.**
 
-**Introduction**
+#**Introduction**
 
 ![image](https://github.com/qzz031219/ixd-256-ennis/assets/146476099/710eaf1f-fb2d-42b0-9ee6-d9ad6fd5cafd)
 
@@ -16,8 +16,7 @@ The big concept behind this piece is life. The noise and hustle and bustle of li
 So I want to go through this work to let the audience's mood relax and enter into a meditative state. That's why I want to create an immersive space for this project.
 
 
-
-**Implementation**
+#**Implementation**
 I used:
 - 1 Atom s3 lite board
 - 1 Ultrasonic sensor
@@ -36,9 +35,9 @@ I used:
 <img width="1128" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/abc555db-ef31-47a4-89bf-39fbebb4837d">
 
 
-**Firmware**
+#**Firmware**
 
-**HARDWARE**
+#**HARDWARE**
 
 Pressure sensor setup:
 
@@ -98,7 +97,7 @@ Read the value from the pressure sensor; Call the function to read the distance 
 ```
 
 
-**SOFTWARE**
+#**SOFTWARE**
 
 Add 2 videos to the software and hide default video elements on screeen:
 
@@ -170,7 +169,7 @@ Change volume based on the distance (ultrasonic value):
         }
 ```
 
-**Project references**
+#**Project references**
 
 [link text in square brackets] followed by (link URL in parantheses)
 [Ultrasonic sensor connected to the atom s3 board](https://www.youtube.com/watch?v=DM1Lu8oo-50)
