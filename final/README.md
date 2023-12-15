@@ -166,9 +166,12 @@ Change volume based on the distance (ultrasonic value):
 
 ### Integrations
 
-I am not using software like Adafruit or IFTTT. But I created two motion clips in this project and uploaded them locally. So that I can directly call them in the software.
+I am not using software like Adafruit or IFTTT. But I created two motion clips by using after effects in this project and uploaded them locally. So that I can directly call them in the software.
 
 <img width="282" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/5a07a744-73fb-49fe-b012-cfb8a0ac971d">
+
+<img width="1481" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/e00529ed-b8f6-4598-b82c-e2bc59c81745">
+
 
 ### Enclosure / Mechanical Design
 
