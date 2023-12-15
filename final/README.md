@@ -38,8 +38,49 @@ I used:
 
 **Firmware**
 
-if(input_val > 1000):  # sensor value higher than threshold
-   led_pin.on()  # turn on LED
+**HARDWARE**
+
+Pressure sensor setup:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L11C1-L12C25
+
+Define the maximum and minimum distances for the ultrasonic sensor:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L8C1-L9C22
+
+Trigger the ultrasonic sensor:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L17C1-L22C18
+
+Calculate the distance in cm, speed of sound is 0.0343 cm/µs, so distance = timepassed * 0.0343/2:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L24C1-L36C27
+
+Read the value from the pressure sensor:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L40C1-L41C1
+
+Call the function to read the distance from the ultrasonic sensor:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L41C4-L41C4
+
+Print the value to monitor:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L43C1-L46C62
+
+**SOFTWARE**
+
+Add 2 videos to the software and hide default video elements on screeen:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L12C1-L20C17
+
+Use ternary operator to determine which video should play based on pressure sensor value, if value is greater than 4000, play video 1; if value is less than 4000, toggle to video 2;
+Besides that, check if a transition is not already happening:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L35C1-L41C6
+
+Volume fade in and out during transition:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L45C1-L46C65
+
+Video fade in and out during transition:
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L44C5-L44C5
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L48C1-L55C28
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L70C1-L74C59
+
+Change volume based on the distance (ultrasonic value):
+https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L57C7-L64C10
+
 
 **Project references**
 
