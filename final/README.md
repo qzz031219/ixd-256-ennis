@@ -17,6 +17,10 @@ So I want to go through this work to let the audience's mood relax and enter int
 
 
 
-
-
 **Implementation**
+
+I used:
+- 1 Atom s3 lite board
+- 1 Ultrasonic sensor
+- 1 Pressure sensor
+<img width="947" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/d246a4b8-8b45-4c1a-aeff-b8d49222b411">
