@@ -11,7 +11,7 @@ This is my initial idea, which is to create an interactive art installation piec
 The big concept behind this piece is life. The noise and hustle and bustle of life are everywhere, working and studying, getting up early and going to bed late, all of which take a toll on our minds. Including the seriousness of today's rat race, whether it is society or people around us will bring us a lot of pressure. How do we escape this predicament?
 
 
-So I want to go through this work to let the audience's mood relax and enter into a meditative state. That's why I want to create an immersive space for this project.
+Therefore, I want the viewers to put down their phones, relax and enter a meditative state through this work. That's why I wanted to create an immersive space for this project.
 
 
 ## Implementation
@@ -168,17 +168,23 @@ Change volume based on the distance (ultrasonic value):
         }
 ```
 
-## Integrations
+### Integrations
 
 I am not using software like Adafruit or IFTTT. But I created two motion clips in this project and uploaded them locally. So that I can directly call them in the software.
 
 <img width="282" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/5a07a744-73fb-49fe-b012-cfb8a0ac971d">
 
+### Enclosure / Mechanical Design
 
-## Project references**
+Laser cut 
+<img width="1000" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/8349d190-ad37-4f79-ba3e-93ac0920817e">
 
-[link text in square brackets] followed by (link URL in parantheses)
+
+
+## Project references
+
 [Ultrasonic sensor connected to the atom s3 board](https://www.youtube.com/watch?v=DM1Lu8oo-50)
+
 [Trigger ultrasonic sensor to measure and calculate distance](https://github.com/orgs/micropython/discussions/11205)
 
 
