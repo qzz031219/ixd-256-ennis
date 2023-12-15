@@ -100,17 +100,75 @@ Read the value from the pressure sensor; Call the function to read the distance 
 
 **SOFTWARE**
 
-[Add 2 videos to the software and hide default video elements on screeen:]
-(https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L12C1-L20C17)
+Add 2 videos to the software and hide default video elements on screeen:
 
-[Use ternary operator to determine which video should play based on pressure sensor value, if value is greater than 4000, play video 1; if value is less than 4000, toggle to video 2; Besides that, check if a transition is not already happening:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L35C1-L41C6)
+```ruby
+    createCanvas(windowWidth, windowHeight);
+    vid1 = createVideo("video1.mp4");
+    vid2 = createVideo("video2.mp4");
 
-[Volume fade in and out during transition:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L45C1-L46C65)
+    vid1.size(windowWidth, windowHeight);
+    vid2.size(windowWidth, windowHeight);
 
-[Video fade in and out during transition:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L44C5-L44C5;https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L48C1-L55C28;https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L70C1-L74C59)
+    vid1.hide();
+    vid2.hide();
+```
 
-[Change volume based on the distance (ultrasonic value):](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/sketch.js#L57C7-L64C10)
+Use conditional operator to determine which video should play based on pressure sensor value, if value is greater than 4000, play video 1; if value is less than 4000, toggle to video 2; Besides that, check if a transition is not already happening:
 
+```ruby
+    let newVideo = (pressure > 4000) ? vid1 : vid2;
+    if (newVideo !== currentVideo && !isTransitioning) {
+        nextVideo = newVideo;
+        isTransitioning = true;
+        nextVideo.time(0);
+        nextVolume = 0;
+    }
+```
+
+Volume fade in and out during transition: 
+
+```ruby
+        currentVolume = max(0, currentVolume - volumeTransitionSpeed);
+        nextVolume = min(1, nextVolume + volumeTransitionSpeed);
+```
+
+Video fade in and out during transition:
+
+```ruby
+        fade += 2;
+```
+
+```ruby
+        if (fade >= 255) {
+            fade = 0;
+            currentVideo.hide();
+            currentVideo = nextVideo;
+            nextVideo = null;
+            isTransitioning = false;
+            currentVolume = nextVolume;
+            nextVolume = 0;
+```
+
+```ruby
+    tint(255, 255 - fade);
+    image(currentVideo, 0, 0, windowWidth, windowHeight);
+    if (nextVideo) {
+        tint(255, fade);
+        image(nextVideo, 0, 0, windowWidth, windowHeight);
+```
+
+Change volume based on the distance (ultrasonic value):
+
+```ruby
+        if (distance >= 100) {
+            currentVolume = 0;
+        } else if (distance <= 50) {
+            currentVolume = 1;
+        } else {
+            currentVolume = map(distance, 50, 100, 1, 0);
+        }
+```
 
 **Project references**
 
