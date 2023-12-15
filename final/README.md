@@ -40,7 +40,11 @@ I used:
 
 **HARDWARE**
 
-[Pressure sensor setup:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L11C1-L12C25)
+Pressure sensor setup:
+```ruby
+adc = ADC(Pin(PRESSURE_SENSOR_PIN))
+adc.atten(ADC.ATTN_11DB)
+```
 
 [Define the maximum and minimum distances for the ultrasonic sensor:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L8C1-L9C22)
 
