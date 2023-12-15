@@ -1,6 +1,6 @@
 # ixd-256-ennis
 
-##[Project Name: life's silent escape.]
+## [Project Name: life's silent escape.]
 
 # Introduction
 
