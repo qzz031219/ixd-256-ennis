@@ -18,9 +18,34 @@ So I want to go through this work to let the audience's mood relax and enter int
 
 
 **Implementation**
-
 I used:
 - 1 Atom s3 lite board
 - 1 Ultrasonic sensor
 - 1 Pressure sensor
+
 <img width="947" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/d246a4b8-8b45-4c1a-aeff-b8d49222b411">
+
+<img width="657" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/8a6b5dec-2fb4-4cd9-92f6-debe69417af4">
+
+<img width="1118" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/8dfd7fe1-3d33-4077-a177-5f6883a1bdad">
+
+<img width="1076" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/2499f167-dabe-4098-af8d-03693109d941">
+
+<img width="1223" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/7dd69982-c7f5-45b5-99a0-8b3fc44aa0fa">
+
+<img width="1128" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/abc555db-ef31-47a4-89bf-39fbebb4837d">
+
+
+**Firmware**
+
+if(input_val > 1000):  # sensor value higher than threshold
+   led_pin.on()  # turn on LED
+
+**Project references**
+
+[link text in square brackets] followed by (link URL in parantheses)
+[Ultrasonic sensor connected to the atom s3 board](https://www.youtube.com/watch?v=DM1Lu8oo-50)
+[Trigger ultrasonic sensor to measure and calculate distance](https://github.com/orgs/micropython/discussions/11205)
+
+
+
