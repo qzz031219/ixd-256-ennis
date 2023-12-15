@@ -15,6 +15,8 @@ So I want to go through this work to let the audience's mood relax and enter int
 
 
 ## Implementation
+
+### Hardware
 I used:
 - 1 Atom s3 lite board
 - 1 Ultrasonic sensor
@@ -33,9 +35,9 @@ I used:
 <img width="1128" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/abc555db-ef31-47a4-89bf-39fbebb4837d">
 
 
-## Firmware
+### Firmware
 
-### HARDWARE
+#### Hardware
 
 Pressure sensor setup:
 
@@ -95,7 +97,7 @@ Read the value from the pressure sensor; Call the function to read the distance 
 ```
 
 
-### SOFTWARE
+#### Software
 
 Add 2 videos to the software and hide default video elements on screeen:
 
@@ -166,6 +168,13 @@ Change volume based on the distance (ultrasonic value):
             currentVolume = map(distance, 50, 100, 1, 0);
         }
 ```
+
+## Integrations
+
+I am not using software like Adafruit or IFTTT. But I created two motion clips in this project and uploaded them locally. So that I can directly call them in the software.
+
+<img width="282" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/5a07a744-73fb-49fe-b012-cfb8a0ac971d">
+
 
 ## Project references**
 
