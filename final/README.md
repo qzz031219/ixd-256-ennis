@@ -41,18 +41,21 @@ I used:
 **HARDWARE**
 
 Pressure sensor setup:
+
 ```ruby
 adc = ADC(Pin(PRESSURE_SENSOR_PIN))
 adc.atten(ADC.ATTN_11DB)
 ```
 
 Define the maximum and minimum distances for the ultrasonic sensor:
+
 ```ruby
 MAX_DISTANCE_CM = 400
 MIN_DISTANCE_CM = 2  
 ```
 
 Trigger the ultrasonic sensor:
+
 ```ruby
     trig.value(0)
     time.sleep_us(2)
@@ -62,6 +65,7 @@ Trigger the ultrasonic sensor:
 ```
 
 Calculate the distance in cm (speed of sound is 0.0343 cm/µs, so distance = timepassed * 0.0343/2):
+
 ```ruby
     while echo.value() == 0:
         signaloff = time.ticks_us()
@@ -79,6 +83,7 @@ Calculate the distance in cm (speed of sound is 0.0343 cm/µs, so distance = tim
 ```
 
 Read the value from the pressure sensor; Call the function to read the distance from the ultrasonic sensor; Print the value to monitor the value, if the value is right, if the connection is stable:
+
 ```ruby
     while True:
         pressure_val = adc.read()
