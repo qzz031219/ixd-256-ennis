@@ -46,17 +46,52 @@ adc = ADC(Pin(PRESSURE_SENSOR_PIN))
 adc.atten(ADC.ATTN_11DB)
 ```
 
-[Define the maximum and minimum distances for the ultrasonic sensor:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L8C1-L9C22)
+Define the maximum and minimum distances for the ultrasonic sensor:
+```ruby
+MAX_DISTANCE_CM = 400
+MIN_DISTANCE_CM = 2  
+```
 
-[Trigger the ultrasonic sensor:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L17C1-L22C18)
+Trigger the ultrasonic sensor:
+```ruby
+    trig.value(0)
+    time.sleep_us(2)
+    trig.value(1)
+    time.sleep_us(10)
+    trig.value(0)
+```
 
-[Calculate the distance in cm (speed of sound is 0.0343 cm/µs, so distance = timepassed * 0.0343/2):](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L24C1-L36C27)
+Calculate the distance in cm (speed of sound is 0.0343 cm/µs, so distance = timepassed * 0.0343/2):
+```ruby
+    while echo.value() == 0:
+        signaloff = time.ticks_us()
 
-[Read the value from the pressure sensor:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L40C1-L41C1)
+    while echo.value() == 1:
+        signalon = time.ticks_us()
 
-[Call the function to read the distance from the ultrasonic sensor:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L41C4-L41C4)
+    timepassed = signalon - signaloff
+    distance_cm = (timepassed * 0.017)
 
-[Print the value to monitor the value, if the value is right, if the connection is stable:](https://github.com/qzz031219/ixd-256-ennis/blob/42ff30b4b52e4528044a516af9264c4412e8d17d/final/pressure%20and%20distance.py#L43C1-L46C62)
+    if distance_cm < MIN_DISTANCE_CM or distance_cm > MAX_DISTANCE_CM:
+        return None
+    else:
+        return distance_cm
+```
+
+Read the value from the pressure sensor; Call the function to read the distance from the ultrasonic sensor; Print the value to monitor the value, if the value is right, if the connection is stable:
+```ruby
+    while True:
+        pressure_val = adc.read()
+        distance_val = read_ultrasonic()
+
+        if distance_val is not None:
+            print("{},{}".format(distance_val, pressure_val))
+        else:
+            print("Distance invalid,{}".format(pressure_val))
+
+        time.sleep(0.5)
+```
+
 
 **SOFTWARE**
 
