@@ -1,6 +1,4 @@
-# ixd-256-ennis
-
-## Project Name: life's silent escape.
+# FINAL PROJECT: life's silent escape.
 
 ## Introduction
 
