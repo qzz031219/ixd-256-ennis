@@ -176,9 +176,37 @@ I am not using software like Adafruit or IFTTT. But I created two motion clips i
 
 ### Enclosure / Mechanical Design
 
-Laser cut 
+Laser cutting was used to cut out the base to hold the cell phone:
+
 <img width="1000" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/8349d190-ad37-4f79-ba3e-93ac0920817e">
 
+Testing the pressure sensor (test how many pieces need to be stacked to have a change in value after putting the phone):
+
+<img width="1038" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/e17852b3-76e5-4dea-bb23-6a59993d5afb">
+
+Different variations:
+
+<img width="900" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/eae04477-4e4f-4888-ab53-98141d93a810">
+
+After testing, the best way to detect the distance between screen and the audience:
+
+<img width="754" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/31c77020-58e1-45fe-b6ca-c8c91af698a5">
+
+
+## Project outcome
+
+
+## Conclusion
+Before I got into ArtCenter, I did play around with some sensors, one of which was an ultrasonic sensor. At that time, when I was using the arduino uno, I felt that the video playback wasn't that smooth and clear, and I didn't know what to do with it. I thought there must be a new hardware or way to fix it. But now, I figured it out.
+And in the process of doing this project, I learned more about ultrasonic sensors. It's really hard to make the ultrasonic sensor measure the distance between the screen and the viewer, but measuring the distance from the viewer to the wall would be better. That's why I made the ultrasonic sensor a wearable device.
+
+If I had more time to test and simulate, I think I could have made a better box or laser cut pieces for the wearable.
+
+I also learned that if the object is hard then the pressure sensor will not detect it. So I added a piece of rubber under the base of the phone so that the pressure sensor could detect gravity.
+
+During the coding process, I forgot how to connect the hardware data to javascript and how to visualize it in the browser, or some other testing issues. But Nikita and Micheal really helped me with those issues. I really appreciate that!!
+
+Wish you have a nice winter break!!
 
 
 ## Project references
