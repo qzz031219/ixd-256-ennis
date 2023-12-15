@@ -1,8 +1,8 @@
 # ixd-256-ennis
 
-#Project Name: life's silent escape.
+##[Project Name: life's silent escape.]
 
-#Introduction
+# Introduction
 
 ![image](https://github.com/qzz031219/ixd-256-ennis/assets/146476099/710eaf1f-fb2d-42b0-9ee6-d9ad6fd5cafd)
 
