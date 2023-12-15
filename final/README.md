@@ -198,13 +198,19 @@ After testing, the best way to detect the distance between screen and the audien
 
 ## Conclusion
 Before I got into ArtCenter, I did play around with some sensors, one of which was an ultrasonic sensor. At that time, when I was using the arduino uno, I felt that the video playback wasn't that smooth and clear, and I didn't know what to do with it. I thought there must be a new hardware or way to fix it. But now, I figured it out.
+
+
 And in the process of doing this project, I learned more about ultrasonic sensors. It's really hard to make the ultrasonic sensor measure the distance between the screen and the viewer, but measuring the distance from the viewer to the wall would be better. That's why I made the ultrasonic sensor a wearable device.
+
 
 If I had more time to test and simulate, I think I could have made a better box or laser cut pieces for the wearable.
 
+
 I also learned that if the object is hard then the pressure sensor will not detect it. So I added a piece of rubber under the base of the phone so that the pressure sensor could detect gravity.
 
+
 During the coding process, I forgot how to connect the hardware data to javascript and how to visualize it in the browser, or some other testing issues. But Nikita and Micheal really helped me with those issues. I really appreciate that!!
+
 
 Wish you have a nice winter break!!
 
