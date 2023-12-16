@@ -198,6 +198,8 @@ After testing, the best way to detect the distance between screen and the audien
 
 <img width="1478" alt="image" src="https://github.com/qzz031219/ixd-256-ennis/assets/146476099/3daf5e6a-3146-4f2c-8740-3490debd46d5">
 
+[Prototype link](https://youtu.be/BmdtUSvDnqk)
+
 
 
 ## Conclusion
